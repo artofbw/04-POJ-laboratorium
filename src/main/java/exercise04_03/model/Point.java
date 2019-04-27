@@ -9,6 +9,9 @@ public class Point {
         this.y = y;
     }
 
+    public Point() {
+    }
+
     public float getX() {
         return x;
     }
@@ -30,7 +33,8 @@ public class Point {
         this.y = y;
     }
 
-    public float getXY() {
-        return getX() + getY();
+    public float[] getXY() {
+        float[] getXY = {this.x, this.y};
+        return getXY;
     }
 }
